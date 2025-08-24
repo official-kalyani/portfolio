@@ -49,20 +49,20 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
 
     <!-- Animate.css -->
-    <link rel="stylesheet" href="{{ asset('css/')}}/animate.css">
+    <link rel="stylesheet" href="{{ asset('public/css/')}}/animate.css">
     <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="{{ asset('css/')}}/icomoon.css">
+    <link rel="stylesheet" href="{{ asset('public/css/')}}/icomoon.css">
     <!-- Bootstrap  -->
-    <link rel="stylesheet" href="{{ asset('css/')}}/bootstrap.css">
+    <link rel="stylesheet" href="{{ asset('public/css/')}}/bootstrap.css">
     <!-- Flexslider  -->
-    <link rel="stylesheet" href="{{ asset('css/')}}/flexslider.css">
+    <link rel="stylesheet" href="{{ asset('public/css/')}}/flexslider.css">
     <!-- Flaticons  -->
     <link rel="stylesheet" href="{{ asset('fonts/')}}/flaticon/font/flaticon.html">
     <!-- Owl Carousel -->
-    <link rel="stylesheet" href="{{ asset('css/')}}/owl.carousel.min.css">
-    <link rel="stylesheet" href="{{ asset('css/')}}/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{{ asset('public/css/')}}/owl.carousel.min.css">
+    <link rel="stylesheet" href="{{ asset('public/css/')}}/owl.theme.default.min.css">
     <!-- Theme style  -->
-    <link rel="stylesheet" href="{{ asset('css/')}}/style.css">
+    <link rel="stylesheet" href="{{ asset('public/css/')}}/style.css">
 
     <!-- Modernizr JS -->
     <script src="{{ asset('js/')}}/modernizr-2.6.2.min.js"></script>
