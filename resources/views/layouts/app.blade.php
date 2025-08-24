@@ -78,21 +78,21 @@
             <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
             <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
                 <div class="text-center">
-                    <div class="author-img" style="background-image: url(images/about.jpg);"></div>
-                    <h1 id="colorlib-logo"><a href="index-2.html">Jackson Ford</a></h1>
-                    <span class="position"><a href="#">UI/UX/Designer</a> in Philippines</span>
+                    <div class="author-img" style="background-image: url(images/tiki.jpeg);"></div>
+                    <h1 id="colorlib-logo"><a href="index-2.html">Kalyani Priyadarsini</a></h1>
+                    <span class="position"><a href="#">Full Stack PHP Developer</a> in India</span>
                 </div>
                 <nav id="colorlib-main-menu" role="navigation" class="navbar">
                     <div id="navbar" class="collapse">
                         <ul>
                             <li class="active"><a href="#" data-nav-section="home">Home</a></li>
                             <li><a href="#" data-nav-section="about">About</a></li>
-                            <li><a href="#" data-nav-section="services">Services</a></li>
+                            {{-- <li><a href="#" data-nav-section="services">Services</a></li> --}}
                             <li><a href="#" data-nav-section="skills">Skills</a></li>
                             <li><a href="#" data-nav-section="education">Education</a></li>
                             <li><a href="#" data-nav-section="experience">Experience</a></li>
                             <li><a href="#" data-nav-section="work">Work</a></li>
-                            <li><a href="#" data-nav-section="blog">Blog</a></li>
+                            {{-- <li><a href="#" data-nav-section="blog">Blog</a></li> --}}
                             <li><a href="#" data-nav-section="contact">Contact</a></li>
                         </ul>
                     </div>
@@ -114,15 +114,15 @@
                 <section id="colorlib-hero" class="js-fullheight" data-section="home">
                     <div class="flexslider js-fullheight">
                         <ul class="slides">
-                            <li style="background-image: url(images/img_bg_1.jpg);">
+                            <li style="background-image: url(images/sea-image.jpg);">
                                 <div class="overlay"></div>
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
                                             <div class="slider-text-inner js-fullheight">
                                                 <div class="desc">
-                                                    <h1>Hi! <br>I'm Jackson</h1>
-                                                    <h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2>
+                                                    <h1>Hi! <br>I'm Kalyani</h1>
+                                                    {{-- <h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2> --}}
                                                     <p><a class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a></p>
                                                 </div>
                                             </div>
@@ -130,16 +130,16 @@
                                     </div>
                                 </div>
                             </li>
-                            <li style="background-image: url(images/img_bg_2.jpg);">
+                            <li style="background-image: url(images/white-bg.jpg);">
                                 <div class="overlay"></div>
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
                                             <div class="slider-text-inner">
                                                 <div class="desc">
-                                                    <h1>I am <br>a Designer</h1>
-                                                    <h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2>
-                                                    <p><a class="btn btn-primary btn-learn">View Portfolio <i class="icon-briefcase3"></i></a></p>
+                                                    <h1>I am <br>a Full stack PHP Developer</h1>
+                                                    {{-- <h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2> --}}
+                                                    {{-- <p><a class="btn btn-primary btn-learn">View Portfolio <i class="icon-briefcase3"></i></a></p> --}}
                                                 </div>
                                             </div>
                                         </div>
@@ -157,43 +157,42 @@
                                 <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
                                     <div class="col-md-12">
                                         <div class="about-desc">
-                                            <span class="heading-meta">About Us</span>
+                                            <span class="heading-meta">About me</span>
                                             <h2 class="colorlib-heading">Who Am I?</h2>
-                                            <p><strong>Hi I'm Jackson Ford</strong> On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
-                                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                                            <p><strong>I have hands-on experience in Core PHP, and I am proficient in frameworks such as Laravel, Yii2, CodeIgniter, CakePHP, and Vue.js. My database expertise lies in MySQL, and I primarily work in MS Windows as my operating system.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+                                    {{-- <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
                                         <div class="services color-1">
                                             <span class="icon2"><i class="icon-bulb"></i></span>
                                             <h3>Graphic Design</h3>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
                                         <div class="services color-2">
                                             <span class="icon2"><i class="icon-globe-outline"></i></span>
-                                            <h3>Web Design</h3>
+                                            <h3>Website Development</h3>
                                         </div>
                                     </div>
-                                    <div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+                                    {{-- <div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
                                         <div class="services color-3">
                                             <span class="icon2"><i class="icon-data"></i></span>
                                             <h3>Software</h3>
                                         </div>
-                                    </div>
-                                    <div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+                                    </div> --}}
+                                    {{-- <div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
                                         <div class="services color-4">
                                             <span class="icon2"><i class="icon-phone3"></i></span>
                                             <h3>Application</h3>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
                                         <div class="hire">
-                                            <h2>I am happy to know you <br>that 300+ projects done sucessfully!</h2>
+                                            <h2>I am happy to know you <br>that 20+ projects done sucessfully!</h2>
                                             <a href="#" class="btn-hire">Hire me</a>
                                         </div>
                                     </div>
@@ -205,7 +204,7 @@
 
 
 
-                <section class="colorlib-services" data-section="services">
+                {{-- <section class="colorlib-services" data-section="services">
                     <div class="colorlib-narrow-content">
                         <div class="row">
                             <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
@@ -282,7 +281,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> --}}
 
                 <div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
                     <div class="overlay"></div>
@@ -290,22 +289,22 @@
                         <div class="row">
                         </div>
                         <div class="row">
-                            <div class="col-md-3 text-center animate-box">
+                            {{-- <div class="col-md-3 text-center animate-box">
                                 <span class="colorlib-counter js-counter" data-from="0" data-to="309" data-speed="5000" data-refresh-interval="50"></span>
                                 <span class="colorlib-counter-label">Cups of coffee</span>
-                            </div>
-                            <div class="col-md-3 text-center animate-box">
-                                <span class="colorlib-counter js-counter" data-from="0" data-to="356" data-speed="5000" data-refresh-interval="50"></span>
-                                <span class="colorlib-counter-label">Projects</span>
-                            </div>
+                            </div> --}}
                             <div class="col-md-3 text-center animate-box">
                                 <span class="colorlib-counter js-counter" data-from="0" data-to="30" data-speed="5000" data-refresh-interval="50"></span>
-                                <span class="colorlib-counter-label">Clients</span>
+                                <span class="colorlib-counter-label">Projects</span>
                             </div>
-                            <div class="col-md-3 text-center animate-box">
+                            {{-- <div class="col-md-3 text-center animate-box">
+                                <span class="colorlib-counter js-counter" data-from="0" data-to="30" data-speed="5000" data-refresh-interval="50"></span>
+                                <span class="colorlib-counter-label">Clients</span>
+                            </div> --}}
+                            {{-- <div class="col-md-3 text-center animate-box">
                                 <span class="colorlib-counter js-counter" data-from="0" data-to="10" data-speed="5000" data-refresh-interval="50"></span>
                                 <span class="colorlib-counter-label">Partners</span>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -320,11 +319,11 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-                                <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                                <p>I have hands-on experience in Core PHP, and I am proficient in frameworks such as Laravel, Yii2, CodeIgniter, CakePHP, and Vue.js. My database expertise lies in MySQL, and I primarily work in MS Windows as my operating system.</p>
                             </div>
                             <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
                                 <div class="progress-wrap">
-                                    <h3>Photoshop</h3>
+                                    <h3>Laravel</h3>
                                     <div class="progress">
                                         <div class="progress-bar color-1" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
                                             <span>75%</span>
@@ -334,7 +333,7 @@
                             </div>
                             <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
                                 <div class="progress-wrap">
-                                    <h3>jQuery</h3>
+                                    <h3>CodeIgniter</h3>
                                     <div class="progress">
                                         <div class="progress-bar color-2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
                                             <span>60%</span>
@@ -344,10 +343,10 @@
                             </div>
                             <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
                                 <div class="progress-wrap">
-                                    <h3>HTML5</h3>
+                                    <h3>CakePHP</h3>
                                     <div class="progress">
                                         <div class="progress-bar color-3" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                                            <span>85%</span>
+                                            <span>50%</span>
                                         </div>
                                     </div>
                                 </div>
@@ -377,7 +376,7 @@
                                     <h3>SEO</h3>
                                     <div class="progress">
                                         <div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                                            <span>80%</span>
+                                            <span>40%</span>
                                         </div>
                                     </div>
                                 </div>
@@ -401,7 +400,7 @@
                                         <div class="panel panel-default">
                                             <div class="panel-heading" role="tab" id="headingOne">
                                                 <h4 class="panel-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Master Degree Graphic Design
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Master in Computer Application
                                                     </a>
                                                 </h4>
                                             </div>
@@ -409,10 +408,10 @@
                                                 <div class="panel-body">
                                                     <div class="row">
                                                         <div class="col-md-6">
-                                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                                                            <p>Completed MCA at CPGS college of OUAT,BBSR in 2014</p>
                                                         </div>
                                                         <div class="col-md-6">
-                                                            <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                                            <p>CGPA - 83%</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -421,16 +420,15 @@
                                         <div class="panel panel-default">
                                             <div class="panel-heading" role="tab" id="headingTwo">
                                                 <h4 class="panel-title">
-                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Bachelor Degree of Computer Science
+                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">B.sc in Comp.Sc Honours
                                                     </a>
                                                 </h4>
                                             </div>
                                             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                                 <div class="panel-body">
-                                                    <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                                    <p>Completed from R.D Womens’ College,BBSR in 2011</p>
                                                     <ul>
-                                                        <li>Separated they live in Bookmarksgrove right</li>
-                                                        <li>Separated they live in Bookmarksgrove right</li>
+                                                        <li>Percentage secured 76.83%</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -438,13 +436,14 @@
                                         <div class="panel panel-default">
                                             <div class="panel-heading" role="tab" id="headingThree">
                                                 <h4 class="panel-title">
-                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Diploma in Information Technology
+                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">12th / CHSE
                                                     </a>
                                                 </h4>
                                             </div>
                                             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                                 <div class="panel-body">
-                                                    <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                                    <p>Completed 12th from K.K.S Womens’ College,Balasore under CHSE,Odisha in 2008 </p>
+                                                    <p>Secured Percentage 66% </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -452,30 +451,19 @@
                                         <div class="panel panel-default">
                                             <div class="panel-heading" role="tab" id="headingFour">
                                                 <h4 class="panel-title">
-                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Diploma in Information Technology
+                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">10th
                                                     </a>
                                                 </h4>
                                             </div>
                                             <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                                                 <div class="panel-body">
-                                                    <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                                    <p>Completed 10th (All Subjects) from Balasore Zilla School,Balasore under BSE,Odisha in 2006</p>
+                                                    <p> Percentage Secured 83%</p>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading" role="tab" id="headingFive">
-                                                <h4 class="panel-title">
-                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">High School Secondary Education
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                                                <div class="panel-body">
-                                                    <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -502,14 +490,14 @@
                                             </div>
 
                                             <div class="timeline-label">
-                                                <h2><a href="#">Full Stack Developer</a> <span>2017-2018</span></h2>
+                                                <h2><a href="#">Full Stack Developer</a> <span>2018-2025</span></h2>
                                                 <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
                                             </div>
                                         </div>
                                     </article>
 
 
-                                    <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+                                    {{-- <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
                                         <div class="timeline-entry-inner">
                                             <div class="timeline-icon color-2">
                                                 <i class="icon-pen2"></i>
@@ -519,9 +507,9 @@
                                                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
                                             </div>
                                         </div>
-                                    </article>
+                                    </article> --}}
 
-                                    <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                                    {{-- <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
                                         <div class="timeline-entry-inner">
                                             <div class="timeline-icon color-3">
                                                 <i class="icon-pen2"></i>
@@ -531,9 +519,9 @@
                                                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
                                             </div>
                                         </div>
-                                    </article>
+                                    </article> --}}
 
-                                    <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+                                    {{-- <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
                                         <div class="timeline-entry-inner">
                                             <div class="timeline-icon color-4">
                                                 <i class="icon-pen2"></i>
@@ -543,9 +531,9 @@
                                                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
                                             </div>
                                         </div>
-                                    </article>
+                                    </article> --}}
 
-                                    <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                                    {{-- <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
                                         <div class="timeline-entry-inner">
                                             <div class="timeline-icon color-5">
                                                 <i class="icon-pen2"></i>
@@ -555,7 +543,7 @@
                                                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
                                             </div>
                                         </div>
-                                    </article>
+                                    </article> --}}
 
                                     <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
                                         <div class="timeline-entry-inner">
@@ -574,105 +562,43 @@
                         <div class="row">
                             <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
                                 <span class="heading-meta">My Work</span>
-                                <h2 class="colorlib-heading animate-box">Recent Work</h2>
+                                <h2 class="colorlib-heading animate-box">Recent Works</h2>
                             </div>
                         </div>
                         <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
                             <div class="col-md-12">
-                                <p class="work-menu"><span><a href="#" class="active">Graphic Design</a></span> <span><a href="#">Web Design</a></span> <span><a href="#">Software</a></span> <span><a href="#">Apps</a></span></p>
+                                <p class="work-menu"><span><a href="#" class="active">Websites</a></span> 
+                                        {{-- <span><a href="#">Web Design</a></span>
+                                        <span><a href="#">Software</a></span> 
+                                        <span><a href="#">Apps</a></span> --}}
+                                 </p>
                             </div>
                         </div>
                         <div class="row">
+                        @php
+                            $projects = App\Models\Project::latest()->get();
+                        @endphp
+                        @foreach($projects as $project)
                             <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                                <div class="project" style="background-image: url(images/img-1.jpg);">
+                           
+                                <div class="project" @if($project->image)
+                                            style="background-image: url('{{ asset($project->image) }}');"
+                                        @endif>
                                     <div class="desc">
                                         <div class="con">
-                                            <h3><a href="work.html">Work 01</a></h3>
-                                            <span>Website</span>
+                                            <h3><a href="work.html">{{ $project->title }}</a></h3>
+                                            <span>{{ Str::limit($project->description, 100) }}</span>
                                             <p class="icon">
-                                                <span><a href="#"><i class="icon-share3"></i></a></span>
-                                                <span><a href="#"><i class="icon-eye"></i> 100</a></span>
-                                                <span><a href="#"><i class="icon-heart"></i> 49</a></span>
+                                                <span><a href="@if($project->url) {{ $project->url }} @endif"><i class="icon-share3"></i></a></span>
+                                                {{-- <span><a href="#"><i class="icon-eye"></i> 100</a></span>
+                                                <span><a href="#"><i class="icon-heart"></i> 49</a></span> --}}
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-                                <div class="project" style="background-image: url(images/img-2.jpg);">
-                                    <div class="desc">
-                                        <div class="con">
-                                            <h3><a href="work.html">Work 02</a></h3>
-                                            <span>Animation</span>
-                                            <p class="icon">
-                                                <span><a href="#"><i class="icon-share3"></i></a></span>
-                                                <span><a href="#"><i class="icon-eye"></i> 100</a></span>
-                                                <span><a href="#"><i class="icon-heart"></i> 49</a></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-                                <div class="project" style="background-image: url(images/img-3.jpg);">
-                                    <div class="desc">
-                                        <div class="con">
-                                            <h3><a href="work.html">Work 03</a></h3>
-                                            <span>Illustration</span>
-                                            <p class="icon">
-                                                <span><a href="#"><i class="icon-share3"></i></a></span>
-                                                <span><a href="#"><i class="icon-eye"></i> 100</a></span>
-                                                <span><a href="#"><i class="icon-heart"></i> 49</a></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
-                                <div class="project" style="background-image: url(images/img-4.jpg);">
-                                    <div class="desc">
-                                        <div class="con">
-                                            <h3><a href="work.html">Work 04</a></h3>
-                                            <span>Application</span>
-                                            <p class="icon">
-                                                <span><a href="#"><i class="icon-share3"></i></a></span>
-                                                <span><a href="#"><i class="icon-eye"></i> 100</a></span>
-                                                <span><a href="#"><i class="icon-heart"></i> 49</a></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                                <div class="project" style="background-image: url(images/img-5.jpg);">
-                                    <div class="desc">
-                                        <div class="con">
-                                            <h3><a href="work.html">Work 05</a></h3>
-                                            <span>Graphic, Logo</span>
-                                            <p class="icon">
-                                                <span><a href="#"><i class="icon-share3"></i></a></span>
-                                                <span><a href="#"><i class="icon-eye"></i> 100</a></span>
-                                                <span><a href="#"><i class="icon-heart"></i> 49</a></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-                                <div class="project" style="background-image: url(images/img-6.jpg);">
-                                    <div class="desc">
-                                        <div class="con">
-                                            <h3><a href="work.html">Work 06</a></h3>
-                                            <span>Web Design</span>
-                                            <p class="icon">
-                                                <span><a href="#"><i class="icon-share3"></i></a></span>
-                                                <span><a href="#"><i class="icon-eye"></i> 100</a></span>
-                                                <span><a href="#"><i class="icon-heart"></i> 49</a></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                             @endforeach
+                            
                         </div>
                         <div class="row">
                             <div class="col-md-12 animate-box">
@@ -682,53 +608,7 @@
                     </div>
                 </section>
 
-                <section class="colorlib-blog" data-section="blog">
-                    <div class="colorlib-narrow-content">
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                                <span class="heading-meta">Read</span>
-                                <h2 class="colorlib-heading">Recent Blog</h2>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-                                <div class="blog-entry">
-                                    <a href="blog.html" class="blog-img"><img src="images/blog-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-                                    <div class="desc">
-                                        <span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-                                        <h3><a href="blog.html">Renovating National Gallery</a></h3>
-                                        <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-                                <div class="blog-entry">
-                                    <a href="blog.html" class="blog-img"><img src="images/blog-2.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-                                    <div class="desc">
-                                        <span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-                                        <h3><a href="blog.html">Wordpress for a Beginner</a></h3>
-                                        <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-                                <div class="blog-entry">
-                                    <a href="blog.html" class="blog-img"><img src="images/blog-3.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-                                    <div class="desc">
-                                        <span><small>April 14, 2018 </small> | <small> Inspiration </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-                                        <h3><a href="blog.html">Make website from scratch</a></h3>
-                                        <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 animate-box">
-                                <p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                
 
                 <section class="colorlib-contact" data-section="contact">
                     <div class="colorlib-narrow-content">
@@ -745,25 +625,25 @@
                                         <i class="icon-globe-outline"></i>
                                     </div>
                                     <div class="colorlib-text">
-                                        <p><a href="#"><span class="__cf_email__" data-cfemail="157c7b737a55717a78747c7b3b767a78">[email&#160;protected]</span></a></p>
+                                        <p><a href="#"><span class="__cf_email__" data-cfemail="157c7b737a55717a78747c7b3b767a78">[klnpriyadarsini@gmail.com]</span></a></p>
                                     </div>
                                 </div>
 
-                                <div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+                                {{-- <div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
                                     <div class="colorlib-icon">
                                         <i class="icon-map"></i>
                                     </div>
                                     <div class="colorlib-text">
                                         <p>198 West 21th Street, Suite 721 New York NY 10016</p>
                                     </div>
-                                </div>
+                                </div> --}}
 
                                 <div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
                                     <div class="colorlib-icon">
                                         <i class="icon-phone"></i>
                                     </div>
                                     <div class="colorlib-text">
-                                        <p><a href="tel://">+123 456 7890</a></p>
+                                        <p><a href="tel://">+91 7381643308</a></p>
                                     </div>
                                 </div>
                             </div>
