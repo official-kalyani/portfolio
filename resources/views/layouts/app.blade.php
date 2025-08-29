@@ -49,7 +49,7 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
 
     <!-- Animate.css -->
-    <link rel="stylesheet" href="{{ asset('public/css/')}}/animate.css">
+    <link rel="stylesheet" href="{{ config('app.url') }}/css/animate.css">
     <!-- Icomoon Icon Fonts-->
     <link rel="stylesheet" href="{{ asset('public/css/')}}/icomoon.css">
     <!-- Bootstrap  -->
