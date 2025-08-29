@@ -51,21 +51,21 @@
     <!-- Animate.css -->
     <link rel="stylesheet" href="{{ config('app.url') }}/css/animate.css">
     <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="{{ asset('public/css/')}}/icomoon.css">
+    <link rel="stylesheet" href="{{ config('app.url') }}/css/icomoon.css">
     <!-- Bootstrap  -->
-    <link rel="stylesheet" href="{{ asset('public/css/')}}/bootstrap.css">
+    <link rel="stylesheet" href="{{ config('app.url') }}/css/bootstrap.css">
     <!-- Flexslider  -->
-    <link rel="stylesheet" href="{{ asset('public/css/')}}/flexslider.css">
+    <link rel="stylesheet" href="{{ config('app.url') }}/css/flexslider.css">
     <!-- Flaticons  -->
-    <link rel="stylesheet" href="{{ asset('fonts/')}}/flaticon/font/flaticon.html">
+    <link rel="stylesheet" href="{{ config('app.url') }}/fonts/flaticon/font/flaticon.html">
     <!-- Owl Carousel -->
-    <link rel="stylesheet" href="{{ asset('public/css/')}}/owl.carousel.min.css">
-    <link rel="stylesheet" href="{{ asset('public/css/')}}/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{{ config('app.url') }}/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{{ config('app.url') }}/css/owl.theme.default.min.css">
     <!-- Theme style  -->
-    <link rel="stylesheet" href="{{ asset('public/css/')}}/style.css">
+    <link rel="stylesheet" href="{{ config('app.url') }}/css/style.css">
 
     <!-- Modernizr JS -->
-    <script src="{{ asset('js/')}}/modernizr-2.6.2.min.js"></script>
+    <script src="{{ config('app.url') }}/js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -114,7 +114,7 @@
                 <section id="colorlib-hero" class="js-fullheight" data-section="home">
                     <div class="flexslider js-fullheight">
                         <ul class="slides">
-                            <li style="background-image: url(images/sea-image.jpg);">
+                            <li style="background-image: url('{{ config('app.url') }}/images/sea-image.jpg');">
                                 <div class="overlay"></div>
                                 <div class="container-fluid">
                                     <div class="row">
@@ -130,7 +130,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li style="background-image: url(images/white-bg.jpg);">
+                            <li style="background-image: url('{{ config('app.url') }}/images/white-bg.jpg');">
                                 <div class="overlay"></div>
                                 <div class="container-fluid">
                                     <div class="row">
@@ -283,7 +283,7 @@
                     </div>
                 </section> --}}
 
-                <div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+                <div id="colorlib-counter" class="colorlib-counters" style="background-image: url('{{ config('app.url') }}/images/cover_bg_1.jpg');" data-stellar-background-ratio="0.5">
                     <div class="overlay"></div>
                     <div class="colorlib-narrow-content">
                         <div class="row">
@@ -681,23 +681,23 @@
 
     <!-- jQuery -->
     <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="{{ asset('js')}}/jquery.min.js"></script>
+    <script src="{{ config('app.url') }}/js/jquery.min.js"></script>
     <!-- jQuery Easing -->
-    <script src="{{ asset('js')}}/jquery.easing.1.3.js"></script>
+    <script src="{{ config('app.url') }}/js/jquery.easing.1.3.js"></script>
     <!-- Bootstrap -->
-    <script src="{{ asset('js')}}/bootstrap.min.js"></script>
+    <script src="{{ config('app.url') }}/js/bootstrap.min.js"></script>
     <!-- Waypoints -->
-    <script src="{{ asset('js')}}/jquery.waypoints.min.js"></script>
+    <script src="{{ config('app.url') }}/js/jquery.waypoints.min.js"></script>
     <!-- Flexslider -->
-    <script src="{{ asset('js')}}/jquery.flexslider-min.js"></script>
+    <script src="{{ config('app.url') }}/js/jquery.flexslider-min.js"></script>
     <!-- Owl carousel -->
-    <script src="{{ asset('js')}}/owl.carousel.min.js"></script>
+    <script src="{{ config('app.url') }}/js/owl.carousel.min.js"></script>
     <!-- Counters -->
-    <script src="{{ asset('js')}}/jquery.countTo.js"></script>
+    <script src="{{ config('app.url') }}/js/jquery.countTo.js"></script>
 
 
     <!-- MAIN JS -->
-    <script src="{{ asset('js')}}/main.js"></script>
+    <script src="{{ config('app.url') }}/js/main.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
