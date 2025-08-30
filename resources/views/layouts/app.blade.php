@@ -491,7 +491,7 @@
 
                                             <div class="timeline-label">
                                                 <h2><a href="#">Full Stack Developer</a> <span>2018-2025</span></h2>
-                                                <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                                <p>My work is mostly on backend with laravel framework , hosting, website design etc.</p>
                                             </div>
                                         </div>
                                     </article>
