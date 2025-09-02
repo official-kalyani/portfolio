@@ -3,7 +3,7 @@
 @else
 @extends('layouts.app')
 @endif
-@section('title', 'Home')
+@section('title', 'Freelance Laravel Developer | Hire for Projects')
 
 @section('content')
 <div id="colorlib-page">
