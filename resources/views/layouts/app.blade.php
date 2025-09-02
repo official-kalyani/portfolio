@@ -29,7 +29,7 @@
     <meta name="description" content="@yield('meta_description', 'I am a freelance Laravel developer specializing in custom web applications, dashboards, APIs, and full-stack solutions. Hire me for your Laravel projects.')">
     <meta name="keywords" content="@yield('meta_keywords', 'freelance Laravel developer, hire Laravel developer, Laravel projects, Laravel web development, Laravel dashboard, Laravel API developer')">
     <meta name="author" content="Your Name">
-    <meta name="google-site-verification" content="04i6eVZJy29frbK0ZYfE9TxOeBlSBdlQeqTFciGZQ8Q" />
+<meta name="google-site-verification" content="04i6eVZJy29frbK0ZYfE9TxOeBlSBdlQeqTFciGZQ8Q" />
     <!-- Open Graph for Facebook & LinkedIn -->
     <meta property="og:title" content="@yield('title', 'Freelance Laravel Developer | Hire for Projects')">
     <meta property="og:description" content="@yield('meta_description', 'I build scalable and secure Laravel applications. Available for freelance projects and collaborations.')">
