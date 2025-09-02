@@ -60,40 +60,63 @@
 
 	// Animations
 	var contentWayPoint = function() {
-		var i = 0;
-		$('.animate-box').waypoint( function( direction ) {
+    var i = 0;
+    $('.animate-box').each(function(){
+        var el = $(this);
 
-			if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+        // If not already animated, animate when scrolled into view
+        if (!el.hasClass('animated')) {
+            el.waypoint(function(direction) {
+                if(direction === 'down') {
+                    i++;
+                    el.addClass('fadeInUp animated').css({
+                        opacity: 1,
+                        visibility: 'visible'
+                    });
+                }
+            }, { offset: '85%' });
+        } else {
+            // Already animated → force visible
+            el.css({ opacity: 1, visibility: 'visible' });
+        }
+    });
+};
+
+	// var contentWayPoint = function() {
+	// 	var i = 0;
+	// 	$('.animate-box').waypoint( function( direction ) {
+
+	// 		if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 				
-				i++;
+	// 			i++;
 
-				$(this.element).addClass('item-animate');
-				setTimeout(function(){
+	// 			$(this.element).addClass('item-animate');
+	// 			setTimeout(function(){
 
-					$('body .animate-box.item-animate').each(function(k){
-						var el = $(this);
-						setTimeout( function () {
-							var effect = el.data('animate-effect');
-							if ( effect === 'fadeIn') {
-								el.addClass('fadeIn animated');
-							} else if ( effect === 'fadeInLeft') {
-								el.addClass('fadeInLeft animated');
-							} else if ( effect === 'fadeInRight') {
-								el.addClass('fadeInRight animated');
-							} else {
-								el.addClass('fadeInUp animated');
-							}
+	// 				$('body .animate-box.item-animate').each(function(k){
+	// 					var el = $(this);
+	// 					setTimeout( function () {
+	// 						var effect = el.data('animate-effect');
+	// 						if ( effect === 'fadeIn') {
+	// 							el.addClass('fadeIn animated');
+	// 						} else if ( effect === 'fadeInLeft') {
+	// 							el.addClass('fadeInLeft animated');
+	// 						} else if ( effect === 'fadeInRight') {
+	// 							el.addClass('fadeInRight animated');
+	// 						} else {
+	// 							el.addClass('fadeInUp animated');
+	// 						}
 
-							el.removeClass('item-animate');
-						},  k * 200, 'easeInOutExpo' );
-					});
+	// 						el.removeClass('item-animate');
+	// 					},  k * 200, 'easeInOutExpo' );
+	// 				});
 					
-				}, 100);
+	// 			}, 100);
 				
-			}
+	// 		}
 
-		} , { offset: '85%' } );
-	};
+	// 	} , { offset: '85%' } );
+	// };
 
 
 	var burgerMenu = function() {

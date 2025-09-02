@@ -613,19 +613,18 @@
                                  </p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row" id="projects-container">
                         @php
-                            $projects = App\Models\Project::latest()->take(6)->get();
+                            $projects = App\Models\Project::latest()->take(3)->get();
                         @endphp
                         @foreach($projects as $project)
                             <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
                            
-                                <div class="project" @if($project->image)
-                                            style="background-image: url('{{ asset($project->image) }}');"
+                                <div class="project" @if($project->image) style="background-image: url('{{ asset($project->image) }}');"
                                         @endif>
                                     <div class="desc">
                                         <div class="con">
-                                            <h3><a href="work.html">{{ $project->title }}</a></h3>
+                                            <h3><a href="@if($project->url) {{ $project->url }} @endif">{{ $project->title }}</a></h3>
                                             <span>{{ Str::limit($project->description, 100) }}</span>
                                             <p class="icon">
                                                 <span><a href="@if($project->url) {{ $project->url }} @endif"><i class="icon-share3"></i></a></span>
@@ -639,9 +638,10 @@
                              @endforeach
                             
                         </div>
+                       
                         <div class="row">
                             <div class="col-md-12 animate-box">
-                                <p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+                                <p><a href="#" id="loadMoreBtn" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
                             </div>
                         </div>
                     </div>
@@ -782,25 +782,42 @@
     </script>
 
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> --}}
 <script>
-    let skip = {{ $projects->count() }}; // already loaded
+    let page = 1;
 
-    $('#load-more').on('click', function () {
+    $("#loadMoreBtn").on("click", function (e) {
+        e.preventDefault();
+        page++;
+
         $.ajax({
-            url: "{{ route('projects.loadMore') }}",
-            type: "POST",
-            data: {
-                _token: "{{ csrf_token() }}",
-                skip: skip
-            },
+            url: "/projects/load-more?page=" + page,
+            type: "GET",
             success: function (res) {
-                if (res.count > 0) {
-                    $('#projects-container').append(res.html);
-                    skip += res.count;
-                } else {
-                    $('#load-more').text("No more projects").prop("disabled", true);
+                if (res.html && res.count > 0) {
+                        let newItems = $(res.html);
+
+                        // force show all new animate-box items
+                        newItems.find(".animate-box").css({
+                            opacity: 1,
+                            visibility: "visible"
+                        });
+
+                        // append them to the container
+                        $("#projects-container").append(newItems);
+
+                        // re-init animations (optional)
+                        if (typeof contentWayPoint === "function") {
+                            contentWayPoint();
+                        }
                 }
+
+                    if (!res.html || res.count === 0) {
+                        $("#loadMoreBtn").hide();
+                    }
+            },
+            error: function () {
+                alert("Something went wrong.");
             }
         });
     });

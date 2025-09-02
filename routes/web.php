@@ -29,7 +29,7 @@ Route::post('/contact/send', [HomeController::class, 'send'])->name('contact.sen
 
 
 
-Route::post('/projects/load-more', [ProjectController::class, 'loadMore'])->name('projects.loadMore');
+Route::get('/projects/load-more', [ProjectController::class, 'loadMore'])->name('projects.loadMore');
 
 Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/dashboard', fn () => view('admin.dashboard'))->name('dashboard');
