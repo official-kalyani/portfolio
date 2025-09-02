@@ -49,23 +49,43 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
 
     <!-- Animate.css -->
-    <link rel="stylesheet" href="{{ config('app.url') }}/css/animate.css">
+    @if(app()->environment('local'))
+    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+    @else
+        <link rel="stylesheet" href="{{ config('app.url') }}/css/animate.css">
+    @endif
     <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="{{ config('app.url') }}/css/icomoon.css">
+    @if(app()->environment('local'))
+    <link rel="stylesheet" href="{{ asset('css/icomoon.css') }}">
+    @else
+        <link rel="stylesheet" href="{{ config('app.url') }}/css/icomoon.css">
+    @endif
+    {{-- <link rel="stylesheet" href="{{ config('app.url') }}/css/icomoon.css"> --}}
     <!-- Bootstrap  -->
-    <link rel="stylesheet" href="{{ config('app.url') }}/css/bootstrap.css">
+    @if(app()->environment('local'))
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+    @else
+        <link rel="stylesheet" href="{{ config('app.url') }}/css/bootstrap.css">
+    @endif
+    {{-- <link rel="stylesheet" href="{{ config('app.url') }}/css/bootstrap.css"> --}}
     <!-- Flexslider  -->
-    <link rel="stylesheet" href="{{ config('app.url') }}/css/flexslider.css">
+    <link rel="stylesheet" href="{{ app()->environment('local') ? asset('css/flexslider.css') : config('app.url') .'/css/flexslider.css'}}">
     <!-- Flaticons  -->
-    <link rel="stylesheet" href="{{ config('app.url') }}/fonts/flaticon/font/flaticon.html">
+    <link rel="stylesheet" href="{{ app()->environment('local') ? asset('/fonts/flaticon/font/flaticon.html') : config('app.url') .'/fonts/flaticon/font/flaticon.html'}}">
     <!-- Owl Carousel -->
-    <link rel="stylesheet" href="{{ config('app.url') }}/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="{{ config('app.url') }}/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{{ app()->environment('local') ? asset('/css/owl.carousel.min.css') : config('app.url') .'/css/owl.carousel.min.css'}} ">
+    <link rel="stylesheet" href="{{ app()->environment('local') ? asset('/css/owl.theme.default.min.css') : config('app.url') .'/css/owl.theme.default.min.css'}}">
     <!-- Theme style  -->
-    <link rel="stylesheet" href="{{ config('app.url') }}/css/style.css">
+    @if(app()->environment('local'))
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    @else
+        <link rel="stylesheet" href="{{ config('app.url') }}/css/style.css">
+    @endif
+    {{-- <link rel="stylesheet" href="{{ config('app.url') }}/css/style.css"> --}}
 
     <!-- Modernizr JS -->
-    <script src="{{ config('app.url') }}/js/modernizr-2.6.2.min.js"></script>
+    
+    <script src="{{ app()->environment('local') ? asset('js/modernizr-2.6.2.min.js') : config('app.url') .'js/modernizr-2.6.2.min.js'}}"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -114,7 +134,9 @@
                 <section id="colorlib-hero" class="js-fullheight" data-section="home">
                     <div class="flexslider js-fullheight">
                         <ul class="slides">
-                            <li style="background-image: url('{{ config('app.url') }}/images/sea-image.jpg');">
+                            <li style="background-image: url('{{ app()->environment('local') 
+    ? asset('images/sea-image.jpg') 
+    : config('app.url') . '/images/sea-image.jpg' }}');">
                                 <div class="overlay"></div>
                                 <div class="container-fluid">
                                     <div class="row">
@@ -130,7 +152,9 @@
                                     </div>
                                 </div>
                             </li>
-                            <li style="background-image: url('{{ config('app.url') }}/images/white-bg.jpg');">
+                            <li style="background-image: url('{{ app()->environment('local') 
+    ? asset('images/white-bg.jpg') 
+    : config('app.url') . '/images/white-bg.jpg' }}');">
                                 <div class="overlay"></div>
                                 <div class="container-fluid">
                                     <div class="row">
@@ -283,7 +307,9 @@
                     </div>
                 </section> --}}
 
-                <div id="colorlib-counter" class="colorlib-counters" style="background-image: url('{{ config('app.url') }}/images/cover_bg_1.jpg');" data-stellar-background-ratio="0.5">
+                <div id="colorlib-counter" class="colorlib-counters" style="background-image: url('{{ app()->environment('local') 
+    ? asset('images/cover_bg_1.jpg') 
+    : config('app.url') . '/images/cover_bg_1.jpg' }}');" data-stellar-background-ratio="0.5">
                     <div class="overlay"></div>
                     <div class="colorlib-narrow-content">
                         <div class="row">
@@ -407,11 +433,17 @@
                                             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                                 <div class="panel-body">
                                                     <div class="row">
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-12">
                                                             <p>Completed MCA at CPGS college of OUAT,BBSR in 2014</p>
                                                         </div>
-                                                        <div class="col-md-6">
-                                                            <p>CGPA - 83%</p>
+                                                        
+                                                    </div>
+                                                    <div class="row">                                                        
+                                                        <div class="col-md-12">
+                                                            
+                                                            <ul>
+                                                                <li>CGPA - 83%</li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -443,7 +475,10 @@
                                             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                                 <div class="panel-body">
                                                     <p>Completed 12th from K.K.S Womens’ College,Balasore under CHSE,Odisha in 2008 </p>
-                                                    <p>Secured Percentage 66% </p>
+                                                    <ul>
+                                                        <li>Secured Percentage 66%</li>
+                                                    </ul>
+                                                   
                                                 </div>
                                             </div>
                                         </div>
@@ -458,7 +493,11 @@
                                             <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                                                 <div class="panel-body">
                                                     <p>Completed 10th (All Subjects) from Balasore Zilla School,Balasore under BSE,Odisha in 2006</p>
-                                                    <p> Percentage Secured 83%</p>
+                                                    <ul>
+                                                        <li>
+                                                            Percentage Secured 83%
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
@@ -642,26 +681,33 @@
                                     <div class="colorlib-icon">
                                         <i class="icon-phone"></i>
                                     </div>
-                                    <div class="colorlib-text">
-                                        <p><a href="tel://">+91 7381643308</a></p>
-                                    </div>
+                                    {{-- <div class="colorlib-text">
+                                        <p><a href="tel://">+91 8917483525</a></p>
+                                    </div> --}}
                                 </div>
                             </div>
                             <div class="col-md-7 col-md-push-1">
                                 <div class="row">
                                     <div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-                                        <form action="#">
+                                    @if(session('success'))
+                                        <div class="alert alert-success" id="success-alert" style="background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb;">
+                                            {{ session('success') }}
+                                        </div>
+                                    @endif
+
+                                        <form action="{{ route('contact.send') }}" method="POST">
+                                        @csrf
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Name">
+                                                <input type="text" class="form-control" placeholder="Name" name="name">
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Email">
+                                                <input type="text" class="form-control" placeholder="Email" name="email">
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Subject">
+                                                <input type="text" name="subject" class="form-control" placeholder="Subject">
                                             </div>
                                             <div class="form-group">
-                                                <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                                                <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
                                             </div>
                                             <div class="form-group">
                                                 <input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
@@ -681,23 +727,23 @@
 
     <!-- jQuery -->
     <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="{{ config('app.url') }}/js/jquery.min.js"></script>
+    <script src="{{ app()->environment('local') ? asset('/js/jquery.min.js') : config('app.url') . '/js/jquery.min.js' }}"></script>
     <!-- jQuery Easing -->
-    <script src="{{ config('app.url') }}/js/jquery.easing.1.3.js"></script>
+    <script src="{{ app()->environment('local') ? asset('/js/jquery.easing.1.3.js') : config('app.url') . '/js/jquery.easing.1.3.js' }}"></script>
     <!-- Bootstrap -->
-    <script src="{{ config('app.url') }}/js/bootstrap.min.js"></script>
+    <script src="{{ app()->environment('local') ? asset('/js/bootstrap.min.js') : config('app.url') . '/js/bootstrap.min.js' }}"></script>
     <!-- Waypoints -->
-    <script src="{{ config('app.url') }}/js/jquery.waypoints.min.js"></script>
+    <script src="{{ app()->environment('local') ? asset('/js/jquery.waypoints.min.js') : config('app.url') . '/js/jquery.waypoints.min.js' }}"></script>
     <!-- Flexslider -->
-    <script src="{{ config('app.url') }}/js/jquery.flexslider-min.js"></script>
+    <script src="{{ app()->environment('local') ? asset('/js/jquery.flexslider-min.js') : config('app.url') . '/js/jquery.flexslider-min.js' }}"></script>
     <!-- Owl carousel -->
-    <script src="{{ config('app.url') }}/js/owl.carousel.min.js"></script>
+    <script src="{{ app()->environment('local') ? asset('/js/owl.carousel.min.js') : config('app.url') . '/js/owl.carousel.min.js' }}"></script>
     <!-- Counters -->
-    <script src="{{ config('app.url') }}/js/jquery.countTo.js"></script>
+    <script src="{{ app()->environment('local') ? asset('/js/jquery.countTo.js') : config('app.url') . '/js/jquery.countTo.js' }}"></script>
 
 
     <!-- MAIN JS -->
-    <script src="{{ config('app.url') }}/js/main.js"></script>
+    <script src="{{ app()->environment('local') ? asset('/js/main.js') : config('app.url') . '/js/main.js' }}"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
@@ -714,6 +760,19 @@
     </script>
 
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"96b500ea5b6cfcf3","version":"2025.7.0","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"cd0b4b3a733644fc843ef0b185f98241","b":1}' crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let alert = document.getElementById('success-alert');
+            if (alert) {
+                setTimeout(() => {
+                    alert.style.transition = "opacity 1s ease";
+                    alert.style.opacity = "0";
+                    setTimeout(() => alert.remove(), 1000);
+                }, 3000); // 3 seconds
+            }
+        });
+    </script>
+
 </body>
 
 </html>

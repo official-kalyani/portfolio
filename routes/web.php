@@ -24,6 +24,10 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/my-projects', [HomeController::class, 'projects'])->name('my-projects');
 Route::post('/contact', [HomeController::class, 'contact'])->name('contact');
 
+
+Route::post('/contact/send', [HomeController::class, 'send'])->name('contact.send');
+
+
 Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/dashboard', fn () => view('admin.dashboard'))->name('dashboard');
     Route::resource('projects', ProjectController::class);
