@@ -1,5 +1,8 @@
+@if(app()->environment('local'))
+@extends('layouts.app-local')
+@else
 @extends('layouts.app')
-
+@endif
 @section('title', 'Home')
 
 @section('content')

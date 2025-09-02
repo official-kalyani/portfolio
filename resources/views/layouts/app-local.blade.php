@@ -49,31 +49,37 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
 
     <!-- Animate.css -->
-    
-        <link rel="stylesheet" href="{{ config('app.url') }}/css/animate.css">
+    @if(app()->environment('local'))
+    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">    
+    @endif
     <!-- Icomoon Icon Fonts-->
-    
-        <link rel="stylesheet" href="{{ config('app.url') }}/css/icomoon.css">
+    @if(app()->environment('local'))
+    <link rel="stylesheet" href="{{ asset('css/icomoon.css') }}">    
+    @endif
     {{-- <link rel="stylesheet" href="{{ config('app.url') }}/css/icomoon.css"> --}}
     <!-- Bootstrap  -->
-    
-        <link rel="stylesheet" href="{{ config('app.url') }}/css/bootstrap.css">
+    @if(app()->environment('local'))
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+    @endif
     {{-- <link rel="stylesheet" href="{{ config('app.url') }}/css/bootstrap.css"> --}}
     <!-- Flexslider  -->
-    <link rel="stylesheet" href="{{  config('app.url') .'/css/flexslider.css'}}">
+    <link rel="stylesheet" href="{{ app()->environment('local') ? asset('css/flexslider.css') : config('app.url') .'/css/flexslider.css'}}">
     <!-- Flaticons  -->
-    <link rel="stylesheet" href="{{ config('app.url') .'/fonts/flaticon/font/flaticon.html'}}">
+    <link rel="stylesheet" href="{{ app()->environment('local') ? asset('/fonts/flaticon/font/flaticon.html') : config('app.url') .'/fonts/flaticon/font/flaticon.html'}}">
     <!-- Owl Carousel -->
-    <link rel="stylesheet" href="{{  config('app.url') .'/css/owl.carousel.min.css'}} ">
-    <link rel="stylesheet" href="{{ config('app.url') .'/css/owl.theme.default.min.css'}}">
+    <link rel="stylesheet" href="{{ app()->environment('local') ? asset('/css/owl.carousel.min.css') : config('app.url') .'/css/owl.carousel.min.css'}} ">
+    <link rel="stylesheet" href="{{ app()->environment('local') ? asset('/css/owl.theme.default.min.css') : config('app.url') .'/css/owl.theme.default.min.css'}}">
     <!-- Theme style  -->
-    
+    @if(app()->environment('local'))
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    @else
         <link rel="stylesheet" href="{{ config('app.url') }}/css/style.css">
+    @endif
     {{-- <link rel="stylesheet" href="{{ config('app.url') }}/css/style.css"> --}}
 
     <!-- Modernizr JS -->
     
-    <script src="{{  config('app.url') .'js/modernizr-2.6.2.min.js'}}"></script>
+    <script src="{{ app()->environment('local') ? asset('js/modernizr-2.6.2.min.js') : config('app.url') .'js/modernizr-2.6.2.min.js'}}"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -85,23 +91,23 @@
 
     <!-- jQuery -->
     <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="{{  config('app.url') . '/js/jquery.min.js' }}"></script>
+    <script src="{{ app()->environment('local') ? asset('/js/jquery.min.js') : config('app.url') . '/js/jquery.min.js' }}"></script>
     <!-- jQuery Easing -->
-    <script src="{{  config('app.url') . '/js/jquery.easing.1.3.js' }}"></script>
+    <script src="{{ app()->environment('local') ? asset('/js/jquery.easing.1.3.js') : config('app.url') . '/js/jquery.easing.1.3.js' }}"></script>
     <!-- Bootstrap -->
-    <script src="{{  config('app.url') . '/js/bootstrap.min.js' }}"></script>
+    <script src="{{ app()->environment('local') ? asset('/js/bootstrap.min.js') : config('app.url') . '/js/bootstrap.min.js' }}"></script>
     <!-- Waypoints -->
-    <script src="{{  config('app.url') . '/js/jquery.waypoints.min.js' }}"></script>
+    <script src="{{ app()->environment('local') ? asset('/js/jquery.waypoints.min.js') : config('app.url') . '/js/jquery.waypoints.min.js' }}"></script>
     <!-- Flexslider -->
-    <script src="{{  config('app.url') . '/js/jquery.flexslider-min.js' }}"></script>
+    <script src="{{ app()->environment('local') ? asset('/js/jquery.flexslider-min.js') : config('app.url') . '/js/jquery.flexslider-min.js' }}"></script>
     <!-- Owl carousel -->
-    <script src="{{  config('app.url') . '/js/owl.carousel.min.js' }}"></script>
+    <script src="{{ app()->environment('local') ? asset('/js/owl.carousel.min.js') : config('app.url') . '/js/owl.carousel.min.js' }}"></script>
     <!-- Counters -->
-    <script src="{{  config('app.url') . '/js/jquery.countTo.js' }}"></script>
+    <script src="{{ app()->environment('local') ? asset('/js/jquery.countTo.js') : config('app.url') . '/js/jquery.countTo.js' }}"></script>
 
 
     <!-- MAIN JS -->
-    <script src="{{  config('app.url') . '/js/main.js' }}"></script>
+    <script src="{{ app()->environment('local') ? asset('/js/main.js') : config('app.url') . '/js/main.js' }}"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
