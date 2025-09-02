@@ -28,6 +28,9 @@ Route::post('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::post('/contact/send', [HomeController::class, 'send'])->name('contact.send');
 
 
+
+Route::post('/projects/load-more', [ProjectController::class, 'loadMore'])->name('projects.loadMore');
+
 Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/dashboard', fn () => view('admin.dashboard'))->name('dashboard');
     Route::resource('projects', ProjectController::class);

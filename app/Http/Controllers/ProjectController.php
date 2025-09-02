@@ -91,4 +91,17 @@ class ProjectController extends Controller
 
         return redirect()->route('admin.projects.index')->with('success', 'Project deleted');
     }
+
+    public function loadMore(Request $request)
+    {
+        $skip = $request->input('skip');
+        $take = 6; // how many to load each time
+
+        $projects = Project::latest()->skip($skip)->take($take)->get();
+
+        // Return rendered Blade partial
+        $html = view('partials.project-cards', compact('projects'))->render();
+
+        return response()->json(['html' => $html, 'count' => $projects->count()]);
+    }
 }

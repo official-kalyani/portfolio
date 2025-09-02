@@ -615,7 +615,7 @@
                         </div>
                         <div class="row">
                         @php
-                            $projects = App\Models\Project::latest()->get();
+                            $projects = App\Models\Project::latest()->take(6)->get();
                         @endphp
                         @foreach($projects as $project)
                             <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
@@ -694,7 +694,15 @@
                                             {{ session('success') }}
                                         </div>
                                     @endif
-
+                                    @if($errors->any())
+                                        <div class="alert alert-danger">
+                                            <ul class="mb-0">
+                                                @foreach($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endif
                                         <form action="{{ route('contact.send') }}" method="POST">
                                         @csrf
                                             <div class="form-group">
@@ -773,6 +781,30 @@
         });
     </script>
 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    let skip = {{ $projects->count() }}; // already loaded
+
+    $('#load-more').on('click', function () {
+        $.ajax({
+            url: "{{ route('projects.loadMore') }}",
+            type: "POST",
+            data: {
+                _token: "{{ csrf_token() }}",
+                skip: skip
+            },
+            success: function (res) {
+                if (res.count > 0) {
+                    $('#projects-container').append(res.html);
+                    skip += res.count;
+                } else {
+                    $('#load-more').text("No more projects").prop("disabled", true);
+                }
+            }
+        });
+    });
+</script>
 </body>
 
 </html>
