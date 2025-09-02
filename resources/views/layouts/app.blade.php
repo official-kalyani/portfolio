@@ -25,7 +25,25 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>@yield('title', 'Portfolio')</title>
+    <title>@yield('title', 'Freelance Laravel Developer | Hire for Projects')</title>
+    <meta name="description" content="@yield('meta_description', 'I am a freelance Laravel developer specializing in custom web applications, dashboards, APIs, and full-stack solutions. Hire me for your Laravel projects.')">
+    <meta name="keywords" content="@yield('meta_keywords', 'freelance Laravel developer, hire Laravel developer, Laravel projects, Laravel web development, Laravel dashboard, Laravel API developer')">
+    <meta name="author" content="Your Name">
+
+    <!-- Open Graph for Facebook & LinkedIn -->
+    <meta property="og:title" content="@yield('title', 'Freelance Laravel Developer | Hire for Projects')">
+    <meta property="og:description" content="@yield('meta_description', 'I build scalable and secure Laravel applications. Available for freelance projects and collaborations.')">
+    <meta property="og:image" content="@yield('meta_image', asset('images/laravel-freelance.jpg'))">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('title', 'Freelance Laravel Developer | Hire for Projects')">
+    <meta name="twitter:description" content="@yield('meta_description', 'Hire me for Laravel web development, dashboards, and API projects. Freelance Laravel developer available worldwide.')">
+    <meta name="twitter:image" content="@yield('meta_image', asset('images/laravel-freelance.jpg'))">
+
+    {{-- <title>@yield('title', 'Portfolio')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -40,7 +58,7 @@
     <meta name="twitter:title" content="" />
     <meta name="twitter:image" content="" />
     <meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="" />
+    <meta name="twitter:card" content="" /> --}}
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="favicon.html">
