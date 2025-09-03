@@ -2,27 +2,6 @@
 <html>
 
 <head>
-    <script>
-        (function(w, i, g) {
-            w[g] = w[g] || [];
-            if (typeof w[g].push == 'function') w[g].push(i)
-        })
-        (window, 'G-SEKJ4E9T4H', 'google_tags_first_party');
-
-    </script>
-    <script async src="https://preview.colorlib.com/s9cc/"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('set', 'developer_id.dYzg1YT', true);
-        gtag('config', 'G-SEKJ4E9T4H');
-
-    </script>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>@yield('title', 'Freelance Laravel Developer | Hire for Projects')</title>
@@ -68,11 +47,10 @@
 
     <!-- Animate.css -->
     
-        <link rel="stylesheet" href="{{ config('app.url') }}/css/animate.css">
+        <link rel="stylesheet" href="{{ config('app.url') .'css/animate.css'}}">
     <!-- Icomoon Icon Fonts-->
     
-        <link rel="stylesheet" href="{{ config('app.url') }}/css/icomoon.css">
-    {{-- <link rel="stylesheet" href="{{ config('app.url') }}/css/icomoon.css"> --}}
+        <link rel="stylesheet" href="{{ config('app.url').'/css/icomoon.css' }}">
     <!-- Bootstrap  -->
     
         <link rel="stylesheet" href="{{ config('app.url') }}/css/bootstrap.css">
@@ -136,21 +114,7 @@
     </script>
 
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"96b500ea5b6cfcf3","version":"2025.7.0","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"cd0b4b3a733644fc843ef0b185f98241","b":1}' crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let alert = document.getElementById('success-alert');
-            if (alert) {
-                setTimeout(() => {
-                    alert.style.transition = "opacity 1s ease";
-                    alert.style.opacity = "0";
-                    setTimeout(() => alert.remove(), 1000);
-                }, 3000); // 3 seconds
-            }
-        });
-    </script>
-
-
-{{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> --}}
+    
 <script>
     let page = 1;
 

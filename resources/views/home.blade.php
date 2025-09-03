@@ -1,4 +1,5 @@
-@extends(app()->environment('local') ? 'layouts.app-local' : 'layouts.app')
+@extends('layouts.app')
+{{-- @extends(app()->environment('local') ? 'layouts.app-local' : 'layouts.app') --}}
 
 @section('title', 'Freelance Laravel Developer | Hire for Projects')
 
