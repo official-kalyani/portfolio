@@ -588,9 +588,9 @@
                                 </div> --}}
 
                                 <div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-                                    <div class="colorlib-icon">
+                                    {{-- <div class="colorlib-icon">
                                         <i class="icon-phone"></i>
-                                    </div>
+                                    </div> --}}
                                     {{-- <div class="colorlib-text">
                                         <p><a href="tel://">+91 8917483525</a></p>
                                     </div> --}}
