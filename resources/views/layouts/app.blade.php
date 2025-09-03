@@ -2,13 +2,33 @@
 <html>
 
 <head>
+    <script>
+            (function(w, i, g) {
+                w[g] = w[g] || [];
+                if (typeof w[g].push == 'function') w[g].push(i)
+            })
+            (window, 'G-SEKJ4E9T4H', 'google_tags_first_party');
+
+        </script>
+        <script async src="https://preview.colorlib.com/s9cc/"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('set', 'developer_id.dYzg1YT', true);
+            gtag('config', 'G-SEKJ4E9T4H');
+
+        </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>@yield('title', 'Freelance Laravel Developer | Hire for Projects')</title>
     <meta name="description" content="@yield('meta_description', 'I am a freelance Laravel developer specializing in custom web applications, dashboards, APIs, and full-stack solutions. Hire me for your Laravel projects.')">
     <meta name="keywords" content="@yield('meta_keywords', 'freelance Laravel developer, hire Laravel developer, Laravel projects, Laravel web development, Laravel dashboard, Laravel API developer')">
-    <meta name="author" content="Your Name">
-<meta name="google-site-verification" content="04i6eVZJy29frbK0ZYfE9TxOeBlSBdlQeqTFciGZQ8Q" />
+    <meta name="author" content="Kalyani Priyadarsini">
+    <meta name="google-site-verification" content="04i6eVZJy29frbK0ZYfE9TxOeBlSBdlQeqTFciGZQ8Q" />
     <!-- Open Graph for Facebook & LinkedIn -->
     <meta property="og:title" content="@yield('title', 'Freelance Laravel Developer | Hire for Projects')">
     <meta property="og:description" content="@yield('meta_description', 'I build scalable and secure Laravel applications. Available for freelance projects and collaborations.')">

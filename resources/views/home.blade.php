@@ -575,7 +575,7 @@
                                         <i class="icon-globe-outline"></i>
                                     </div>
                                     <div class="colorlib-text">
-                                        <p><a href="#"><span class="__cf_email__" data-cfemail="157c7b737a55717a78747c7b3b767a78">[klnpriyadarsini@gmail.com]</span></a></p>
+                                        <p><a href="#"><span class="__cf_email__" >[klnpriyadarsini@gmail.com]</span></a></p>
                                     </div>
                                 </div>
 
