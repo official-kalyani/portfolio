@@ -67,7 +67,7 @@
 
     <!-- Animate.css -->
     
-        <link rel="stylesheet" href="{{ config('app.url') .'css/animate.css'}}">
+        <link rel="stylesheet" href="{{ config('app.url') .'/css/animate.css'}}">
     <!-- Icomoon Icon Fonts-->
     
         <link rel="stylesheet" href="{{ config('app.url').'/css/icomoon.css' }}">
